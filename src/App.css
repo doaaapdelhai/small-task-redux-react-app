@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: seagreen;
+}
+.logo{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+
+.container ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+.home{
+    background-color: darkcyan;
+    height: 200px;
+
+}
+.home p{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+
+}
+.about{
+    background-color: royalblue;
+    height: 150px;
+}
+.about p{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+
+}
+.category {
+    height: 100px;
+    background-color: slategrey;
+}
+.category p{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+
+}
+
+.perant{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+}
+.home .btn{
+
+        margin-top: 1rem;
+        /* margin: auto; */
+        /* text-align: center; */
+        display: flex;
+        padding: 5px 42px;
+        font-size: 1.7rem;
+        color: white;
+        border: 0.2rem solid white;
+        border-radius: 5rem;
+        cursor: pointer;
+        background: none;
+    
+}
+.btn-cat{
+    margin-top: 1rem;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    padding: 5px 42px;
+    margin-top: 11px;
+    font-size: 1.7rem;
+    color: white;
+    border: 0.2rem solid white;
+    border-radius: 5rem;
+    cursor: pointer;
+    background: none;
+}
+.btn-nav{
+  
+    color: white;
+    cursor: pointer;
+    background: none;
+    width: 100px;
+    border: 0.2rem solid white;
+    border-radius: 5rem;
+    cursor: pointer;
+    background: none;
+
+
+
+}
