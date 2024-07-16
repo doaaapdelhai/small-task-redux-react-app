@@ -1,79 +1,30 @@
-import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { pizzaFunc } from "./Redux/APISlice";
+import { useEffect, useState } from "react";
 
 const About = () => {
-  const {counter} =  useSelector(function (z) { return z.doaa  })
-  // const {counter} =  useSelector( (z) => z.doaa  )
-  // console.log(data);
+  const [titles, setTitles] = useState([]);
+
+  // useDispatch
+  const dispatch = useDispatch();
+
+  async function getProductX() {
+    let x = await dispatch(pizzaFunc());
+    setTitles(x.payload.recipes.slice(0, 4).map((item) => item.title));
+  }
+
+  useEffect(() => {
+    getProductX();
+  }, []);
+
   return (
     <div className="about">
-    <p className="">this is about page : {counter} </p>
+    <h2 className="title">product from API :  </h2>
+       {titles.map((title, index) => (
+        <p className="p-fetch"  key={index}>{title}</p>
+      ))}
     </div>
   );
-}
+};
 
 export default About;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import { useSelector } from "react-redux"
-
-// function About() {
-//  let {count}= useSelector ((y)=>y.counterrrrr)
-//  console.log(count);
-
-//   return (
-//     <div>
-//       <h1> About  : {count} </h1>
-//     </div>
-//   )
-// }
-
-// export default About
-// =====================================
-

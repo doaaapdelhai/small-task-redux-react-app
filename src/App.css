@@ -99,6 +99,13 @@
     cursor: pointer;
     background: none;
 
-
-
 }
+.about .title{
+    text-align: center;
+    color: darkred;
+}
+ .about .p-fetch   {
+    font-size: 18px;
+    color: white;
+}
+
